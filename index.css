@@ -30,6 +30,23 @@
 
   .awards .col {
     text-align: center;
+    position: relative;
+  }
+
+  .awards .col .img {
+    height: 256px;
+    width: 256px;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+  }
+
+  .awards .col .textOverImage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .awards .col p {
