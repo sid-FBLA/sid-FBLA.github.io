@@ -12,7 +12,7 @@
   color: #444444;
 }
 
-.blue {
+.blueBackground {
   color: #1265A8;
   background-color: #1265A8;
 }
@@ -26,6 +26,27 @@
 @media only screen and (min-width: 300px) {
   .navbar {
     border-bottom: 1px solid #00529B;
+    padding: 0px;
+  }
+
+  .navbar .disabled {
+    opacity: 0.7;
+    background-color: #ffffff !important;
+    color: #444444 !important;
+  }
+
+  .navbar ul li {
+    padding: 8px 0 8px 0;
+  }
+
+  .navbar .container .navbar-collapse ul li:hover {
+    background-color: #1265A8;
+    color: white;
+    cursor: pointer;
+  }
+
+  .navbar .container .navbar-collapse ul li:hover > a {
+    color: white;
   }
 
   .awards .col {
@@ -36,10 +57,6 @@
   .awards .col .img {
     height: 256px;
     width: 256px;
-    left: 50%;
-    margin-left: -50px;
-    top: 50%;
-    margin-top: -50px;
   }
 
   .awards .col .textOverImage {
