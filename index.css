@@ -29,14 +29,19 @@
     padding: 0px;
   }
 
+  .navbar-collapse {
+    height: 80px;
+  }
+
   .navbar .disabled {
     opacity: 0.7;
     background-color: #ffffff !important;
     color: #444444 !important;
   }
 
-  .navbar ul li {
-    padding: 8px 0 8px 0;
+  .navbar ul li a {
+    padding: 28px 0 28px 0;
+    font-size: 1rem;
   }
 
   .navbar .container .navbar-collapse ul li:hover {
@@ -69,5 +74,9 @@
   .awards .col p {
     margin-top: 1rem;
     font-size: 1.5rem;
+  }
+
+  .card-deck {
+    margin-top: 7rem;
   }
 }
