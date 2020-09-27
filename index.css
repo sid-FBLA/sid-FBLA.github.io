@@ -29,6 +29,10 @@
     padding: 0px;
   }
 
+  .navbar .navbar-text {
+    color: black;
+  }
+
   .navbar-collapse {
     height: 80px;
   }
@@ -78,5 +82,9 @@
 
   .card-deck {
     margin-top: 7rem;
+  }
+
+  .container .card-deck .card .mt-auto {
+    align-self: flex-start;
   }
 }
