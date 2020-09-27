@@ -130,7 +130,7 @@
   /* Sticky footer styles
 -------------------------------------------------- */
   :root {
-    --footer-height: 300px;
+    --footer-height: 270px;
   }
   .wrapper {
     min-height: calc(100vh - var(--footer-height));
@@ -150,6 +150,10 @@
 
   .footer .d-flex .col p {
     margin-top: 1.5rem;
+  }
+
+  .footer .main {
+    flex-flow: column wrap;
   }
 
   #sitemap {
@@ -225,6 +229,10 @@
 
 @media only screen and (min-width: 768px) {
   .container .card-deck {
+    flex-flow: row wrap;
+  }
+
+  .footer .main {
     flex-flow: row wrap;
   }
 
