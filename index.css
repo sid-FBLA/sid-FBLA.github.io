@@ -98,6 +98,7 @@
   .awards .col {
     text-align: center;
     position: relative;
+    min-width: 500px;
   }
 
   .awards .col .img {
@@ -119,7 +120,10 @@
 
   .container .card-deck {
     margin-top: 7rem;
-    flex-flow: column wrap;
+  }
+
+  .container .card-deck .card {
+    min-width: 448px;
   }
 
   .container .card-deck .card .mt-auto {
@@ -152,8 +156,12 @@
     margin-top: 1.5rem;
   }
 
+  .footer .d-flex .column-display {
+    min-width: 500px;
+  }
+
   .footer .main {
-    flex-flow: column wrap;
+    flex-flow: row wrap;
   }
 
   #sitemap {
@@ -220,20 +228,13 @@
 }
 
 @media only screen and (min-width: 576px) {
-  .container .card-deck {
-    /*override bootstraps property "row wrap"*/
-    flex-flow: column wrap;
-  }
 
 }
 
-@media only screen and (min-width: 768px) {
-  .container .card-deck {
-    flex-flow: row wrap;
-  }
+@media only screen and (min-width: 1024px) {
 
-  .footer .main {
-    flex-flow: row wrap;
+  .footer .d-flex .column-display {
+    min-width: 350px;
   }
 
 }
