@@ -164,6 +164,10 @@
     flex-flow: row wrap;
   }
 
+  .footer .footer-copyright {
+    background-color: rgb(233,236,239);
+  }
+
   #sitemap {
     margin-top: 1.5rem;
   }
