@@ -31,11 +31,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
   console.log(vh);
 
   let wrapperHeight = vh-footerHeight;
-  wrapper.style.minHeight = wrapperHeight;
+  wrapper.style.minHeight = wrapperHeight + 'px';
 
   console.log(wrapperHeight);
   console.log(wrapper.offsetHeight);
 
-  footer.style.offsetHeight = 500;
 
 });

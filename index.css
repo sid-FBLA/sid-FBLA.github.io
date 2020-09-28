@@ -67,6 +67,7 @@
   }
 
   .navbar .container .navbar-collapse ul li:hover {
+    transition: 250ms;
     background-color: #1265A8;
     color: white;
     cursor: pointer;
@@ -133,16 +134,9 @@
   /*Footer Styling */
   /* Sticky footer styles
 -------------------------------------------------- */
-  :root {
-    --footer-height: 270px;
-  }
-  .wrapper {
-    min-height: calc(100vh - var(--footer-height));
-  }
 
   .footer {
     margin-top: 5rem;
-    height: var(--footer-height);
     width: 100%;
     background-color: rgba(233,236,239, 0.3);
   }
@@ -154,6 +148,7 @@
 
   .footer .d-flex .col p {
     margin-top: 1.5rem;
+    max-width: 350px;
   }
 
   .footer .d-flex .column-display {
@@ -235,10 +230,10 @@
 
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
 
   .footer .d-flex .column-display {
-    min-width: 350px;
+    min-width: 320px;
   }
 
 }
