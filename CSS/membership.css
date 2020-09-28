@@ -1,0 +1,30 @@
+@media only screen and (min-width: 360px) {
+  .container .card-deck .card-body {
+    position: relative;
+    background-color: white;
+  }
+
+  .container .card-deck .card-body:hover {
+    cursor: pointer;
+  }
+
+  .container .card-deck .card-body .number {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border: solid 2px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding-top: 1px;
+    transform: translate(-50%, -50%);
+  }
+
+  .container .card-deck .card-body .number p {
+    margin-bottom: 0px;
+  }
+
+
+}
