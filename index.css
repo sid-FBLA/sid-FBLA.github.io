@@ -278,4 +278,18 @@
     min-width: 320px;
   }
 
+  .text-blue-pc,
+  .blue-pc {
+    color: #00529B;
+    background-color: #00529B;
+  }
+
+  .text-red-pc,
+  .red-pc {
+    color: #BE2C37;
+    background-color: #BE2C37;
+  }
+
+
+
 }
