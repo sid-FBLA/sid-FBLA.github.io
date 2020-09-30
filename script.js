@@ -36,5 +36,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
   console.log(wrapperHeight);
   console.log(wrapper.offsetHeight);
 
-
 });
