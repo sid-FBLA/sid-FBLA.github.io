@@ -20,14 +20,45 @@
   max-height: 550px;
 }
 
+.main-content {
+  min-width: 500px;
+}
+
+.topic-button {
+  border-radius: 100px;
+}
+
+/*Adjust fontawesome checkmark colour*/
+.list-check {
+  color: #D4D9DD;
+}
+
+/*Topic Icons*/
+
 .topic-list {
   border-bottom: 2px solid #F2F2F2;
   padding: 1rem 0rem 1rem 0rem;
 }
 
-.topic-button {
-  border-radius: 100px;
-  margin-right: 0.25rem;
+.topic-blue i:hover {
+  cursor: pointer;
+  transition: 200ms;
+  color: #00529B;
+}
+
+.topic i {
+  color: #D4D9DD;
+  border: solid 3px;
+  border-radius: 50%;
+}
+
+.topic-book i {
+  font-size: 24px;
+  padding: 16px 17.5px 16px 17.5px;
+}
+
+.topic-yt i {
+  padding: 6px 5px 6px 5px;
 }
 
 }
