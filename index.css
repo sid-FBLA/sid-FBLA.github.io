@@ -24,8 +24,12 @@
   color: #00529B;
 }
 
+.text-blue-pc:hover {
+  color: #00529B;
+}
+
 .text-blue a:hover {
-  color: #1265A8;
+  color: #00529B;
 }
 
 .text-red,
@@ -33,7 +37,15 @@
   color: #BE2C37;
 }
 
+.text-red-pc:hover {
+  color: #BE2C37;
+}
+
 .text-red:hover {
+  color: #BE2C37;
+}
+
+.text-red a:hover {
   color: #BE2C37;
 }
 
@@ -43,6 +55,10 @@
 
 .btn-outline-primary:hover > a {
   color: white;
+  text-decoration: none;
+}
+
+.back-arrow:hover {
   text-decoration: none;
 }
 

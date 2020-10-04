@@ -1,0 +1,33 @@
+@media only screen and (min-width: 360px) {
+
+.red-overlay {
+  background-color: rgba(190, 44, 55, 0.9);
+  z-index: 1;
+}
+
+.blue-overlay {
+  background-color: rgba(0, 82, 155, 0.9);
+  z-index: 1;
+}
+
+.card-img-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-card-height {
+  max-height: 550px;
+}
+
+.topic-list {
+  border-bottom: 2px solid #F2F2F2;
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+.topic-button {
+  border-radius: 100px;
+  margin-right: 0.25rem;
+}
+
+}
