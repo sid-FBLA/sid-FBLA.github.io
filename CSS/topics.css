@@ -28,6 +28,27 @@
   border-radius: 100px;
 }
 
+.open {
+  margin-top: 0.25rem;
+}
+
+.open a:hover {
+  text-decoration: none;
+}
+
+.video-list {
+  margin-left: 78px;
+}
+
+.video-list .list-group .list-group-item {
+  font-weight: 500;
+  padding-left: 0px;
+}
+
+.video-list .list-group .list-group-item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
 /*Adjust fontawesome checkmark colour*/
 .list-check {
   color: #D4D9DD;

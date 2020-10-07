@@ -78,14 +78,14 @@ ul {
   vertical-align: top;
 }
 
-a[aria-expanded="true"] > i {
+.collapse-button[aria-expanded="true"] > i {
   transform-origin: center center;
   transition: 250ms;
   transform: rotate(-180deg);
   margin-top: 8px;
 }
 
-a[aria-expanded="false"] > i {
+.collapse-button[aria-expanded="false"] > i {
   transform-origin: center center;
   transition: 250ms;
   transform: rotate(0deg);
