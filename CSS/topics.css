@@ -45,9 +45,37 @@
   padding-left: 0px;
 }
 
+.video-list .list-group .list-group-item .d-inline-flex:hover > i,
+.video-list .list-group .list-group-item .d-inline-flex:hover > p {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 200ms;
+  color: #00529B;
+}
+
 .video-list .list-group .list-group-item:first-child {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
+
+.video-list .list-group .list-group-item p {
+  margin-bottom: 0px;
+}
+
+.video-list .list-group .list-group-item .d-inline-flex p:hover ~ i{
+  transition: 200ms;
+  color: #00529B;
+}
+
+/*Modals*/
+.modal-body {
+  padding: 0px;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+}
+
+
 
 /*Adjust fontawesome checkmark colour*/
 .list-check {
@@ -81,5 +109,18 @@
 .topic-yt i {
   padding: 6px 5px 6px 5px;
 }
+
+.topic-play:hover {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 200ms;
+  color: #00529B;
+}
+
+.topic-play i {
+  border: none;
+  font-size: 28px;
+}
+
 
 }
