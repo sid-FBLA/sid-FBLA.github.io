@@ -54,4 +54,22 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
   });
 
+  //Next Modal Button
+  let modalList = document.querySelectorAll('.modal');
+  let modalNextButtonList = document.querySelectorAll('.modal .next-modal');
+
+  //Loops through array of Modals and Modal Next Buttons
+  for(let i = 0; i < modalNextButtonList.length; i += 1) {
+    let modalNextButton = modalNextButtonList[i];
+    modalNextButton.addEventListener('click', function() {
+      //Gets ID of current and next modal
+      let currentModalID = modalList[i].id;
+      let nextModalID = modalList[i + 1].id;
+      //Hides Current Modal, selects via ID
+      $('#' + currentModalID).modal('hide');
+      //Shows Next Modal, selects via ID
+      $('#' + nextModalID).modal('show');
+    });
+  }
+
 });
