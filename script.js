@@ -54,22 +54,38 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
   });
 
-  //Next Modal Button
+  //Next And Previous Modal Button
   let modalList = document.querySelectorAll('.modal');
   let modalNextButtonList = document.querySelectorAll('.modal .next-modal');
+  let modalPreviousButtonList = document.querySelectorAll('.modal .prev-modal')
 
   //Loops through array of Modals and Modal Next Buttons
-  for(let i = 0; i < modalNextButtonList.length; i += 1) {
+  for(let i = 0; i < modalList.length; i += 1) {
     let modalNextButton = modalNextButtonList[i];
+    let modalPrevButton = modalPreviousButtonList[i];
+
     modalNextButton.addEventListener('click', function() {
       //Gets ID of current and next modal
       let currentModalID = modalList[i].id;
       let nextModalID = modalList[i + 1].id;
+      console.log(nextModalID);
       //Hides Current Modal, selects via ID
       $('#' + currentModalID).modal('hide');
       //Shows Next Modal, selects via ID
       $('#' + nextModalID).modal('show');
     });
+
+    modalPrevButton.addEventListener('click', function() {
+      //Gets ID of current and previous modal
+      let currentModalID = modalList[i].id;
+      let prevModalID = modalList[i - 1].id;
+      console.log(prevModalID);
+      //Hides Current Modal, selects via ID
+      $('#' + currentModalID).modal('hide');
+      //Shows Next Modal, selects via ID
+      $('#' + prevModalID).modal('show');
+    });
+
   }
 
 });
