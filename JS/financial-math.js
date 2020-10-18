@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 const srcList = new Array();
 
-  function createTopic(parentID, modalID, title, src, description) {
+  function createTopic(parentID, modalID, title, src, description, badge, badgeSrc) {
     //creating src list array
     const srcListPairs = new Array();
     srcListPairs.push(modalID);
@@ -112,11 +112,94 @@ const srcList = new Array();
             divFooterButtonNext.innerHTML = 'Next Video';
             divFooter.appendChild(divFooterButtonNext);
             console.log(srcList);
+            if (badge === "quizlet") {
+              const quizletBadge = document.createElement('A');
+              quizletBadge.setAttribute('target', '_blank');
+              quizletBadge.setAttribute('href', badgeSrc);
+              quizletBadge.classList.add('badge', 'badge-primary', 'ml-1', 'mt-n2');
+              quizletBadge.innerHTML = 'Quizlet';
+              li.appendChild(quizletBadge);
+            } else {
+            };
   };
 
 
+  //Basic Math Concepts (For Financial Math)
+  createTopic('basicMathConcepts', 'modal1', 'Calculating Wage After Taxes',
+  'Mt4NoACfIBg', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('basicMathConcepts', 'modal2', 'Developing A Budget',
+  'v87cP1JAFME', 'Siddharth Pandey - Founder(FBLA) <br>' +
+  'Answers: Radio-3750, Print Advertising-6750, Trade Shows-4500, Conventions-15000, Catalogs & Brochures-10500, Online Advertising-6000');
+
+  createTopic('basicMathConcepts', 'modal3', 'Balancing A Checkbook',
+  'Qx8JWF54wW4', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('basicMathConcepts', 'modal4', 'Analyzing Problems For Missing/Irrelevant Data (Video Needed)',
+  '', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('basicMathConcepts', 'modal5', 'Identifying Business Math Terms',
+  '', 'Siddharth Pandey - Founder(FBLA)', 'quizlet', 'https://quizlet.com/_8velyn?x=1jqt&i=37cj5h');
+
+  createTopic('basicMathConcepts', 'modal6', 'Applying Relational Operations In A Logical Expression',
+  '-TP7_nZqeZg', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('basicMathConcepts', 'modal7', 'Applying Relational Operations In A Logical Expression (1 Variable)',
+  'lg7hgFYnDjE', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('basicMathConcepts', 'modal8', 'Applying Relational Operations In A Logical Expression (2 Variables)',
+  'y0O0qIfgzeY', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('basicMathConcepts', 'modal9', 'Constructing And Drawing Figures With Given Perimeters And Areas',
+  'Tmc1nUErBAQ', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('basicMathConcepts', 'modal10', 'Interpreting Scale Drawings',
+  'kvCF0ISk-6c', 'Siddharth Pandey - Founder(FBLA)');
 
   //Consumer Credit
+  createTopic('consumerCredit', 'modal11', 'Defining Credit And Credit Terms',
+  'N08GPv3d9G0', 'Shreya Pandey - Content Creator(FBLA)');
+
+  createTopic('consumerCredit', 'modal12', 'Identifying Costs And Benefits Of Various Types Of Credit - Revolving Credit',
+  'Rm4h0CmNnzM', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('consumerCredit', 'modal13', 'Identifying Costs And Benefits Of Various Types Of Credit - Installment And Open Credit',
+  'GtPNcwhpPAQ', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('consumerCredit', 'modal14', 'Calculating Sales Tax',
+  'QwSNEVBGZgc', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('consumerCredit', 'modal15', 'Computing Total Purchase Price With Interest Added',
+  'uF4xXDA79FU', 'Siddharth Pandey - Founder(FBLA)');
+
+  //Costs Of Owning An AutoMobile
+
+  createTopic('consumerCredit', 'modal17', 'Computing Finance Charge From Single Payment Loan',
+  'cHUBiu-v0pI', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('consumerCredit', 'modal18', 'Comparing Installment And Revolving Credit Costs (Part 1)',
+  'W2r8sivG_pM', 'Kevin Li - Competed In Introduction To Financial Math At State Level(FBLA) <br>' +
+  'This is a two-part video which ends abruptly. <br>' +
+  'Important Note: Interest on installment and revolving credit are paid on the outstanding principal.' +
+  ' For example, if $5000 was borrowed, with an interest of 5%/month and $500 was paid back each month then after the first month (5000*1.05) - 500,' +
+  ' would be owed, the subsequent month (4750*1.05) - 500, would be owed and so on, so forth.');
+
+  createTopic('consumerCredit', 'modal19', 'Comparing Installment And Revolving Credit Costs (Part 2)',
+  'tgZ_PDCDQa0', 'Kevin Li - Competed In Introduction To Financial Math At State Level(FBLA) <br>' +
+  'This is a two-part video which ends abruptly. <br>' +
+  'Important Note: Interest on installment and revolving credit are paid on the outstanding principal.' +
+  ' For example, if $5000 was borrowed, with an interest of 5%/month and $500 was paid back each month then after the first month (5000*1.05) - 500,' +
+  ' would be owed, the subsequent month (4750*1.05) - 500, would be owed and so on, so forth.');
+
+  createTopic('consumerCredit', 'modal20', 'Calculating Installment Loan Costs (Part 1)',
+  'miCsQM7nS1U', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('consumerCredit', 'modal21', 'Calculating Installment Loan Costs (Part 2)',
+  '_JfBwiqCcqs', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('consumerCredit', 'modal22', 'Finding Estimated APR Using A Table',
+  '6obQtnpwZkI', 'Siddharth Pandey - Founder(FBLA)');
+
   createTopic('consumerCredit', 'modal23', 'Using the Average Daily Balance Method',
   'OldVg3gVJmQ', 'Siddharth Pandey - Founder(FBLA)');
 
@@ -182,7 +265,7 @@ const srcList = new Array();
   'MDwc986NJuQ', 'Siddharth Pandey - Founder(FBLA) <br>' +
   '0:57, Siddharth said "2" but meant to say "5"');
 
-  createTopic('percentages', 'modal40', 'Percentage "Formula"',
+  createTopic('percentages', 'modal40', 'Percentage "Formula" Explanation',
   'WLAJUVevZxQ', 'Siddharth Pandey - Founder(FBLA) <br>' +
   'Terminology: <br>' +
   'The variable we are solving for (we called this "w" in the proof) -- Base <br>' +

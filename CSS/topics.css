@@ -1,4 +1,19 @@
-  @media only screen and (min-width: 360px) {
+@media only screen and (min-width: 360px) {
+
+body {
+  background-color: #F7F8FA;
+}
+
+h5 {
+  
+}
+
+.container .content {
+  background-color: #FFFFFF;
+  border-radius: 0px 4px 5px 0px;
+  padding-bottom: 3rem;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.1)
+}
 
 .red-overlay {
   background-color: rgba(190, 44, 55, 0.9);
@@ -60,6 +75,10 @@
 .video-list .list-group .list-group-item p {
   margin-bottom: 0px;
   margin-left: 0.5rem;
+}
+
+.video-list .list-group .list-group-item .badge {
+  vertical-align: middle;
 }
 
 .video-list .list-group .list-group-item .d-inline-flex p:hover ~ i{
