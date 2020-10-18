@@ -1,91 +1,232 @@
-//DO NOT WAIT FOR DOM CONTENT TO LOAD
+window.addEventListener('DOMContentLoaded', (event) => {
 //function setAttributes()
 
-function createTopic(parentID, modalID, title, src, description) {
-  //creating list item indentation is to describe DOM Appearance
-  const parent = document.querySelector('#' + parentID);
-  const ul = document.createElement('UL');
-  ul.classList.add('list-group', 'list-group-flush');
-  parent.appendChild(ul);
-  const li = document.createElement('LI');
-  li.classList.add('list-group-item');
-  ul.appendChild(li);
-    const liA = document.createElement('A');
-    liA.classList.add('topic', 'topic-blue', 'topic-play');
-    liA.setAttribute('data-toggle', 'modal');
-    liA.setAttribute('data-target', '#' + modalID);
-    li.appendChild(liA);
-      const liDiv = document.createElement('DIV');
-      liDiv.classList.add('d-inline-flex', 'align-items-center');
-      liA.appendChild(liDiv);
-        const liI = document.createElement('I');
-        liI.classList.add('far', 'fa-play-circle');
-        liDiv.appendChild(liI);
-        const liP = document.createElement('P');
-        liP.innerHTML = title;
-        liDiv.appendChild(liP);
-  console.log(li);
-  //Creating Modal For li
-  const div0 = document.createElement('DIV');
-  div0.classList.add('modal', 'fade');
-  div0.setAttribute('id', modalID);
-  div0.setAttribute('tabindex', '-1');
-  div0.setAttribute('role', 'dialog');
-  div0.setAttribute('aria-labelledby', 'exampleModalCenterTitle');
-  div0.setAttribute('aria-hidden', 'true');
-  ul.appendChild(div0);
-    const div1 = document.createElement('DIV');
-    div1.classList.add('modal-dialog', 'modal-dialog-centered', 'modal-xl');
-    div1.setAttribute('role', 'document');
-    div0.appendChild(div1);
-      const div2 = document.createElement('DIV');
-      div2.classList.add('modal-content');
-      div1.appendChild(div2);
-        const div3 = document.createElement('DIV');
-        div3.classList.add('modal-header');
-        div2.appendChild(div3);
-          const div0H5 = document.createElement('H5');
-          div0H5.classList.add('modal-title', 'w-100', 'text-center');
-          div0H5.innerHTML = title;
-          div3.appendChild(div0H5);
-          const div0Button = document.createElement('BUTTON');
-          div0Button.classList.add('close');
-          div0Button.setAttribute('type', 'button');
-          div0Button.setAttribute('data-dismiss', 'modal');
-          div0Button.setAttribute('aria-label', 'Close');
-          div3.appendChild(div0Button);
-            const div0Span = document.createElement('SPAN');
-            div0Span.setAttribute('aria-hidden', 'true');
-            div0Span.innerHTML = '&times;';
-            div0Button.appendChild(div0Span);
-        const divBody = document.createElement('DIV');
-        divBody.classList.add('modal-body', 'embed-responsive', 'embed-responsive-16by9');
-        div2.appendChild(divBody);
-          const divBodyIframe = document.createElement('IFRAME');
-          divBodyIframe.classList.add('modal-video', 'embed-responsive-item');
-          divBodyIframe.setAttribute('src', 'https://www.youtube.com/embed/' + src);
-          divBody.appendChild(divBodyIframe);
-        const divFooter = document.createElement('DIV');
-        divFooter.classList.add('modal-footer');
-        div2.appendChild(divFooter);
-          const divFooterP = document.createElement('P');
-          divFooterP.classList.add('description', 'w-100');
-          divFooterP.innerHTML = description;
-          divFooter.appendChild(divFooterP);
-          const divFooterButtonPrev = document.createElement('BUTTON');
-          divFooterButtonPrev.setAttribute('type', 'button');
-          divFooterButtonPrev.classList.add('btn', 'btn-secondary', 'prev-modal');
-          divFooterButtonPrev.innerHTML = 'Previous Video';
-          divFooter.appendChild(divFooterButtonPrev);
-          const divFooterButtonNext = document.createElement('BUTTON');
-          divFooterButtonNext.setAttribute('type', 'button');
-          divFooterButtonNext.classList.add('btn', 'btn-primary', 'next-modal');
-          divFooterButtonNext.innerHTML = 'Next Video';
-          divFooter.appendChild(divFooterButtonPrev);
-  console.log(ul);
-};
+const srcList = new Array();
 
-createTopic('consumerCredit', 'modal23', 'Using the Average Daily Balance Method',
-'OldVg3gVJmQ', 'Siddharth Pandey - Founder(FBLA)');
+  function createTopic(parentID, modalID, title, src, description) {
+    //creating src list array
+    const srcListPairs = new Array();
+    srcListPairs.push(modalID);
+    srcListPairs.push(src);
+    srcList.push(srcListPairs)
+    //creating list item indentation is to describe DOM Appearance
+    const parent = document.querySelector('#' + parentID);
+    const ul = parent.firstElementChild;
+    const li = document.createElement('LI');
+    li.classList.add('list-group-item');
+    ul.appendChild(li);
+      const liA = document.createElement('A');
+      liA.classList.add('topic', 'topic-blue', 'topic-play');
+      liA.setAttribute('data-toggle', 'modal');
+      liA.setAttribute('data-target', '#' + modalID);
+      li.appendChild(liA);
+        const liDiv = document.createElement('DIV');
+        liDiv.classList.add('d-inline-flex', 'align-items-center');
+        liA.appendChild(liDiv);
+          const liI = document.createElement('I');
+          liI.classList.add('far', 'fa-play-circle');
+          liDiv.appendChild(liI);
+          const liP = document.createElement('P');
+          liP.innerHTML = title;
+          liDiv.appendChild(liP);
+    //Creating Modal For li
+    const div0 = document.createElement('DIV');
+    div0.classList.add('modal', 'fade');
+    div0.setAttribute('id', modalID);
+    div0.setAttribute('tabindex', '-1');
+    div0.setAttribute('role', 'dialog');
+    div0.setAttribute('aria-labelledby', 'exampleModalCenterTitle');
+    div0.setAttribute('aria-hidden', 'true');
+    ul.appendChild(div0);
+      const div1 = document.createElement('DIV');
+      div1.classList.add('modal-dialog', 'modal-dialog-centered', 'modal-xl');
+      div1.setAttribute('role', 'document');
+      div0.appendChild(div1);
+        const div2 = document.createElement('DIV');
+        div2.classList.add('modal-content');
+        div1.appendChild(div2);
+          const div3 = document.createElement('DIV');
+          div3.classList.add('modal-header');
+          div2.appendChild(div3);
+            const div0H5 = document.createElement('H5');
+            div0H5.classList.add('modal-title', 'w-100', 'text-center');
+            div0H5.innerHTML = title;
+            div3.appendChild(div0H5);
+            const div0Button = document.createElement('BUTTON');
+            div0Button.classList.add('close');
+            div0Button.setAttribute('type', 'button');
+            div0Button.setAttribute('data-dismiss', 'modal');
+            div0Button.setAttribute('aria-label', 'Close');
+            div3.appendChild(div0Button);
+              const div0Span = document.createElement('SPAN');
+              div0Span.setAttribute('aria-hidden', 'true');
+              div0Span.innerHTML = '&times;';
+              div0Button.appendChild(div0Span);
+          const divBody = document.createElement('DIV');
+          divBody.classList.add('modal-body', 'embed-responsive', 'embed-responsive-16by9');
+          div2.appendChild(divBody);
+            const divBodyIframe = document.createElement('IFRAME');
+            //Loads YT Video Only When clicked, reduces load time this is done below
+            divBody.appendChild(divBodyIframe);
+            //Only loads modal video when modal is pressed
+            document.addEventListener('click', function() {
+              //SetTimeout Function gives time for class change
+              setTimeout(function() {
+                const modal = document.querySelectorAll('.modal');
+                for (let i = 0; i < modal.length; i += 1) {
+                  if (modal[i].classList.contains('show')) {
+                    //gets modalID of the modal w/ class 'show'
+                    const modalID = modal[i].id;
+                    let modalIDindex;
+                    //searches in array for index of this modal
+                    for (let i = 0; i < srcList.length; i += 1) {
+                      if (srcList[i][0] === modalID) {
+                        modalIDindex = i;
+                      }
+                    };
+                    const src = srcList[modalIDindex][1];
+                    const divBodyIframe = document.querySelectorAll('.modal iframe');
+                    divBodyIframe[i].classList.add('modal-video', 'embed-responsive-item');
+                    divBodyIframe[i].setAttribute('src', 'https://www.youtube.com/embed/' + src);
+                    divBodyIframe[i].setAttribute('allowfullscreen', '');
+                  }
+                };
+              }, 250)
+            });
+          const divFooter = document.createElement('DIV');
+          divFooter.classList.add('modal-footer');
+          div2.appendChild(divFooter);
+            const divFooterP = document.createElement('P');
+            divFooterP.classList.add('description', 'w-100');
+            divFooterP.innerHTML = description;
+            divFooter.appendChild(divFooterP);
+            const divFooterButtonPrev = document.createElement('BUTTON');
+            divFooterButtonPrev.setAttribute('type', 'button');
+            divFooterButtonPrev.classList.add('btn', 'btn-secondary', 'prev-modal');
+            divFooterButtonPrev.setAttribute('data-dismiss', 'modal');
+            divFooterButtonPrev.innerHTML = 'Previous Video';
+            divFooter.appendChild(divFooterButtonPrev);
+            const divFooterButtonNext = document.createElement('BUTTON');
+            divFooterButtonNext.setAttribute('type', 'button');
+            divFooterButtonNext.classList.add('btn', 'btn-primary', 'next-modal');
+            divFooterButtonNext.innerHTML = 'Next Video';
+            divFooter.appendChild(divFooterButtonNext);
+            console.log(srcList);
+  };
+
+
+
+  //Consumer Credit
+  createTopic('consumerCredit', 'modal23', 'Using the Average Daily Balance Method',
+  'OldVg3gVJmQ', 'Siddharth Pandey - Founder(FBLA)');
+
+  //Data Analysis And Probability
+  createTopic('dataAnalysisAndProbability', 'modal24', 'Using A Data Set To Determine Mean, Median And Mode',
+  'pfLnTMSBEww', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('dataAnalysisAndProbability', 'modal25', 'Determining Which Average Best Represents Central Tendency',
+  'hhMMPNDof2A', "Siddharth Pandey - Founder(FBLA) <br>" +
+  " 1:07 Siddharth says moved to the left but meant to say moved to the right.");
+
+  createTopic('dataAnalysisAndProbability', 'modal26', 'Distinguishing Simple And Weighted Averages and Calculating Each',
+  '0GI5jmNCuRo', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('dataAnalysisAndProbability', 'modal27', 'Constructing A Line Graph',
+  'Om70qTqVUK0', "Siddharth Pandey - Founder(FBLA) <br>" +
+  " This graph should be given a title: Annual Revenue From 2010-2016");
+
+  createTopic('dataAnalysisAndProbability', 'modal28', 'Constructing A Bar Graph',
+  'JTwga1D52oo', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('dataAnalysisAndProbability', 'modal29', 'Constructing A Histogram (Part 1)',
+  'm-GdSyyLmMI', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('dataAnalysisAndProbability', 'modal30', 'Constructing A Histogram (Part 2)',
+  'xmeqvlNZWcc', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('dataAnalysisAndProbability', 'modal31', 'Constructing A Pie Chart (Part 1)',
+  'xmUFrblltyk', 'Siddharth Pandey - Founder(FBLA) <br>' +
+  'This video ends abruptly because of our five-minute video cap, take a look at part 2 for closure');
+
+  createTopic('dataAnalysisAndProbability', 'modal32', 'Construcing A Pie Chart (Part 2)',
+  'q4htEiHss-I', 'Siddharth Pandey - Founder(FBLA) <br>' +
+  'This video ends abruptly because of our five-minute video cap. Thanks For Watching!');
+
+  //Written Summary Of Findings In Tables Charts, etc...
+
+  createTopic('dataAnalysisAndProbability', 'modal33', 'Interpreting And Making Predictions From A Graph',
+  'fkMWwsi70Fw', 'Siddharth Pandey - Founder(FBLA)');
+
+
+  //Discounts
+
+  //identifying Various Types of Discounts
+
+  createTopic('discounts', 'modal34', 'Identifying Various Types Of Discounts (Video Needed)',
+  '', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('discounts', 'modal35', 'Calculating Percent Discount',
+  'KvXCy8bfbnU', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('discounts', 'modal36', 'Calculating Cash Discounts And Net Selling Price',
+  'aK3OXABa6v0', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('discounts', 'modal37', 'Calculating Chain Discounts And Net Selling Price',
+  'vQMRbpjFSpY', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('discounts', 'modal38', 'Calculating Trade Discounts And Net Selling Price',
+  'dFK4Bnv8rVE', 'Siddharth Pandey - Founder(FBLA)');
+
+  //Percentages
+  createTopic('percentages', 'modal39', 'Identifying Base, Rate And Percentage',
+  'MDwc986NJuQ', 'Siddharth Pandey - Founder(FBLA) <br>' +
+  '0:57, Siddharth said "2" but meant to say "5"');
+
+  createTopic('percentages', 'modal40', 'Percentage "Formula"',
+  'WLAJUVevZxQ', 'Siddharth Pandey - Founder(FBLA) <br>' +
+  'Terminology: <br>' +
+  'The variable we are solving for (we called this "w" in the proof) -- Base <br>' +
+  'The percentage (we called this the "%" in the proof) -- Rate <br>' +
+  'The first number shown (we called this the "#" in the proof) -- Part(Percentage, Portion)');
+
+  createTopic('percentages', 'modal41', 'Solving For Base, Rate And Percentage',
+  'ivRUKfmm9FI', 'Siddharth Pandey - Founder(FBLA) <br>' +
+  '0:54 Siddharth says "times by r over r" but means "times by r"');
+
+  createTopic('percentages', 'modal42', 'Calculating The Rate Or Base Of Increase Or Decrease Of An Item',
+  'VVNRvN74gfI', 'Siddharth Pandey - Founder(FBLA) <br>');
+
+  createTopic('percentages', 'modal43', 'Calculating The Markup Or Markdown Of An Item',
+  '5_YlPFRdZ0g', 'Siddharth Pandey - Founder(FBLA) <br>');
+
+  createTopic('percentages', 'modal44', 'Currency Conversion(Taken from "decimals" portion of FBLA requirement)',
+  '-3JLwNxjVV8', 'Siddharth Pandey - Founder(FBLA) <br>');
+
+  //Interest
+
+  //What is Interest?
+
+  createTopic('interest', 'modal46', 'Calculating Simple Interest',
+  'Ih17PKUsQiU', 'Siddharth Pandey - Founder(FBLA) <br>');
+
+  createTopic('interest', 'modal47', 'Introducing Compounding',
+  '2qz3hbdbEgk', 'Siddharth Pandey - Founder(FBLA) <br>' +
+  'Simple Interest = $731 -- we gain 200% interest on our principle amount every day.' +
+  ' This means that we gain an additional $2 every day for 365 days + our initial first dollar.');
+
+  createTopic('interest', 'modal48', 'Calculating Compound Interest',
+  'N6qBBmiMLD0', 'Siddharth Pandey - Founder(FBLA) <br>' +
+  '1:30 - Sid writes 1.05/12 = 1.0175, what he means is 1 + 0.05/12 = 1.0175,' +
+  ' this number represents the change in value from month to month.');
+
+  createTopic('interest', 'modal49', 'Explaining Compound Interest "Formula"',
+  'Llcy5tQG6Ks', 'Siddharth Pandey - Founder(FBLA) <br>');
+
+  createTopic('interest', 'modal50', 'APR VS APY',
+  'ikV9t99gkN8', 'Siddharth Pandey - Founder(FBLA) <br>' +
+  '3:43 - 3:48 Siddharth says "This percent is not the same as this percent over here."' +
+  ' His pen cursor is not showing up for some reason. He is comparing the APY percent to the APR percent.');
 
 //Work for tommorow, get the content explained with the HTML, explain what the JS is "saying" in HTML
+
+});
