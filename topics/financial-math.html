@@ -22,8 +22,8 @@
   </head>
   <title>BME-FBLA</title>
   <body>
-    <div class="wrapper">
       <!--Navigation-->
+    <div class="wrapper">
       <nav class="navbar smart-scroll navbar-expand-sm white">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="Business Management Education Logo"></a>
@@ -241,7 +241,12 @@
         </div>
         </div>
       </div>
-    </div
+      <!--Loader-->
+      <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span><br>
+        <p class="text-white">Loading... I know it's painful, I'll countdown from 3, if it hasn't loaded by then, somethings wrong, try reloading the page.</p>
+      </div>
+    </div>
     <!-- Footer -->
     <footer class="footer">
       <div class="container-fluid d-flex main">
@@ -298,6 +303,23 @@
         <a>BME-FBLA</a>
       </div>
       <!-- Copyright -->
+      <script>
+        $('body').addClass('stop-scrolling');
+        const loadingP = document.querySelector('.loader-wrapper p');
+        setTimeout(function() {
+          loadingP.innerHTML = '3...'
+        }, 500)
+        setTimeout(function() {
+          loadingP.innerHTML = '2...'
+        }, 2000)
+        setTimeout(function() {
+          loadingP.innerHTML = '1...'
+        }, 5000)
+        $(window).on("load", function(){
+          $(".loader-wrapper").fadeOut("slow");
+          $('body').removeClass('stop-scrolling');
+        });
+      </script>
     </footer>
   </body>
 </html>
