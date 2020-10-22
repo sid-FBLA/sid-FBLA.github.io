@@ -244,7 +244,7 @@
       <!--Loader-->
       <div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span><br>
-        <p class="text-white">Loading... I know it's painful, I'll countdown from 3, if it hasn't loaded by then, somethings wrong, try reloading the page.</p>
+        <p class="text-white">Loading... Painful isn't it, starting countdown from 3</p>
       </div>
     </div>
     <!-- Footer -->
@@ -304,21 +304,24 @@
       </div>
       <!-- Copyright -->
       <script>
+        $(document).ready(function(){
+          $(this).scrollTop(0);
+        });
         $('body').addClass('stop-scrolling');
         const loadingP = document.querySelector('.loader-wrapper p');
         setTimeout(function() {
-          loadingP.innerHTML = '3...'
-        }, 500)
-        setTimeout(function() {
-          loadingP.innerHTML = '2...'
-        }, 2000)
-        setTimeout(function() {
-          loadingP.innerHTML = '1...'
-        }, 5000)
-        $(window).on("load", function(){
           $(".loader-wrapper").fadeOut("slow");
           $('body').removeClass('stop-scrolling');
-        });
+        }, 1000);
+        setTimeout(function() {
+          loadingP.innerHTML = '3...'
+        }, 0)
+        setTimeout(function() {
+          loadingP.innerHTML = '2...'
+        }, 1000)
+        setTimeout(function() {
+          loadingP.innerHTML = '1...'
+        }, 2000)
       </script>
     </footer>
   </body>
