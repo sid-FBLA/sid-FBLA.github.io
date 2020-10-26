@@ -70,6 +70,15 @@ ul {
   text-decoration: none;
 }
 
+.centered-paragraph {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 /* Collapsible */
 
 .fa-sort-down {

@@ -200,5 +200,12 @@ h5 {
   font-size: 28px;
 }
 
+/*topics.html*/
+.new-topic-section {
+  padding-top: 1rem;
+  border-top: 2px solid #E9ECEF;
+  margin-bottom: 3rem;
+}
+
 
 }
