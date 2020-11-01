@@ -16,7 +16,7 @@ const srcList = new Array();
     li.classList.add('list-group-item');
     ul.appendChild(li);
       const liA = document.createElement('A');
-      liA.classList.add('topic', 'topic-blue', 'topic-play');
+      liA.classList.add('topic', 'topic-blue','topic-play', 'topic-play-blue');
       liA.setAttribute('data-toggle', 'modal');
       liA.setAttribute('data-target', '#' + modalID);
       li.appendChild(liA);
@@ -24,7 +24,7 @@ const srcList = new Array();
         liDiv.classList.add('d-inline-flex', 'align-items-center');
         liA.appendChild(liDiv);
           const liI = document.createElement('I');
-          liI.classList.add('far', 'fa-play-circle');
+          liI.classList.add('far', 'fa-play-circle', 'play-blue');
           liDiv.appendChild(liI);
           const liP = document.createElement('P');
           liP.innerHTML = title;
@@ -287,7 +287,8 @@ const srcList = new Array();
 
   //Interest
 
-  //What is Interest?
+  createTopic('interest', 'modal45', 'Introducing Interest',
+  'fUyma1oAYG0', 'Siddharth Pandey - Founder(FBLA)')
 
   createTopic('interest', 'modal46', 'Calculating Simple Interest',
   'Ih17PKUsQiU', 'Siddharth Pandey - Founder(FBLA) <br>');
@@ -302,7 +303,7 @@ const srcList = new Array();
   '1:30 - Sid writes 1.05/12 = 1.0175, what he means is 1 + 0.05/12 = 1.0175,' +
   ' this number represents the change in value from month to month.');
 
-  createTopic('interest', 'modal49', 'Explaining Compound Interest "Formula"',
+  createTopic('interest', 'modal49', 'Explaining Compound Interest Equation',
   'Llcy5tQG6Ks', 'Siddharth Pandey - Founder(FBLA) <br>');
 
   createTopic('interest', 'modal50', 'APR VS APY',

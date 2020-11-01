@@ -8,13 +8,21 @@ body {
 h5 {
 
 }
+/*To be used for red links*/
+.light-red {
+  color: #DC3545;
+}
+
+.light-red:hover {
+  color: #BE2C37;
+}
 
 /*Loader*/
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
 }
-.loader-wrapper {
+.loader-wrapper-blue {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -112,12 +120,25 @@ h5 {
   padding-left: 0px;
 }
 
-.video-list .list-group .list-group-item .d-inline-flex:hover > i,
+.video-list .list-group .list-group-item .d-inline-flex p {
+  color: #6a787c;
+}
+
 .video-list .list-group .list-group-item .d-inline-flex:hover > p {
   text-decoration: none;
   cursor: pointer;
   transition: 200ms;
+  color: #384047;
+}
+
+.video-list .list-group .list-group-item .d-inline-flex:hover > .play-blue {
+  transition: 200ms;
   color: #00529B;
+}
+
+.video-list .list-group .list-group-item .d-inline-flex:hover > .play-red {
+  transition: 200ms;
+  color: #BE2C37;
 }
 
 .video-list .list-group .list-group-item:first-child {
@@ -172,27 +193,46 @@ h5 {
   color: #00529B;
 }
 
+.topic-red i:hover {
+  cursor: pointer;
+  transition: 200ms;
+  color: #BE2C37;
+}
+
 .topic i {
   color: #D4D9DD;
   border: solid 3px;
   border-radius: 50%;
 }
 
-.topic-book i {
+.topic-book-blue i {
   font-size: 24px;
   padding: 16px 17.5px 16px 17.5px;
   color: #00529B;
+}
+
+.topic-book-red i {
+  font-size: 24px;
+  padding: 16px 17.5px 16px 17.5px;
+  color: #BE2C37;
 }
 
 .topic-yt i {
   padding: 6px 5px 6px 5px;
 }
 
-.topic-play:hover {
+.topic-play-blue:hover {
   text-decoration: none;
   cursor: pointer;
   transition: 200ms;
   color: #00529B;
+}
+
+.topic-play-red:hover {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 200ms;
+  color: #BE2C37;
 }
 
 .topic-play i {
