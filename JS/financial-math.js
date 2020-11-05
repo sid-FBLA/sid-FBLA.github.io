@@ -4,6 +4,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 const srcList = new Array();
 
   function createTopic(parentID, modalID, title, src, description, badge, badgeSrc) {
+    /*TO DO:
+    -Create DOM Description
+    */
     //creating src list array
     const srcListPairs = new Array();
     srcListPairs.push(modalID);
@@ -68,7 +71,7 @@ const srcList = new Array();
             const divBodyIframe = document.createElement('IFRAME');
             //Loads YT Video Only When clicked, reduces load time this is done below
             divBody.appendChild(divBodyIframe);
-            //Only loads modal video when modal is pressed
+            //Only loads modal video when modal is pressed, set on every click event
             document.addEventListener('click', function() {
               //SetTimeout Function gives time for class change
               setTimeout(function() {
@@ -139,7 +142,7 @@ const srcList = new Array();
   '', 'Siddharth Pandey - Founder(FBLA)');
 
   createTopic('basicMathConcepts', 'modal5', 'Identifying Business Math Terms',
-  '', 'Siddharth Pandey - Founder(FBLA)', 'quizlet', 'https://quizlet.com/_8velyn?x=1jqt&i=37cj5h');
+  'KLjFXKSPdNw', 'Siddharth Pandey - Founder(FBLA)', 'quizlet', 'https://quizlet.com/_8velyn?x=1jqt&i=37cj5h');
 
   createTopic('basicMathConcepts', 'modal6', 'Applying Relational Operations In A Logical Expression',
   '-TP7_nZqeZg', 'Siddharth Pandey - Founder(FBLA)');
