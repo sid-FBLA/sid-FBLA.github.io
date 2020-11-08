@@ -75,6 +75,14 @@ h5 {
   box-shadow: 0 2px 0 rgba(0,0,0,0.1)
 }
 
+.container .content .row {
+  padding: 0px 30px 0px 30px;
+}
+
+.container .content .topic-list {
+  margin: 0px 14px 0px 14px;
+}
+
 .red-overlay {
   background-color: rgba(190, 44, 55, 0.9);
   z-index: 1;
@@ -96,11 +104,26 @@ h5 {
 }
 
 .main-content {
-  min-width: 500px;
+
 }
 
 .topic-button {
   border-radius: 100px;
+}
+
+.btn-watch {
+  color: #d4d9dd;
+}
+
+.btn-watch i {
+  margin-right: 2px;
+}
+
+.btn-watch:hover {
+  transition: 200ms;
+  color: #ffffff;
+  background: none;
+  text-decoration: none;
 }
 
 .open {
@@ -208,12 +231,14 @@ h5 {
 .topic-book-blue i {
   font-size: 24px;
   padding: 16px 17.5px 16px 17.5px;
+  border: solid 4px;
   color: #00529B;
 }
 
 .topic-book-red i {
   font-size: 24px;
   padding: 16px 17.5px 16px 17.5px;
+  border: solid 4px;
   color: #BE2C37;
 }
 

@@ -78,7 +78,7 @@ const srcList = new Array();
                 const modal = document.querySelectorAll('.modal');
                 for (let i = 0; i < modal.length; i += 1) {
                   if (modal[i].classList.contains('show')) {
-                    //gets modalID of the modal w/ class 'show'
+                    //gets modalID of the modal w/ class 'show' defined here for scope
                     const modalID = modal[i].id;
                     let modalIDindex;
                     //searches in array for index of this modal
@@ -114,7 +114,6 @@ const srcList = new Array();
             divFooterButtonNext.classList.add('btn', 'btn-primary', 'next-modal');
             divFooterButtonNext.innerHTML = 'Next Video';
             divFooter.appendChild(divFooterButtonNext);
-            console.log(srcList);
             if (badge === "quizlet") {
               const quizletBadge = document.createElement('A');
               quizletBadge.setAttribute('target', '_blank');
@@ -125,7 +124,6 @@ const srcList = new Array();
             } else {
             };
   };
-
 
   //Basic Math Concepts (For Financial Math)
   createTopic('basicMathConcepts', 'modal1', 'Calculating Wage After Taxes',
@@ -176,6 +174,8 @@ const srcList = new Array();
   'uF4xXDA79FU', 'Siddharth Pandey - Founder(FBLA)');
 
   //Costs Of Owning An AutoMobile
+  createTopic('consumerCredit', 'modal16', 'Computing The Costs Of Owning An Automobile',
+  '736x_a3Ti2U', 'Shreya Pandey - Member of BME(FBLA)');
 
   createTopic('consumerCredit', 'modal17', 'Computing Finance Charge From Single Payment Loan',
   'cHUBiu-v0pI', 'Siddharth Pandey - Founder(FBLA)');
@@ -246,8 +246,6 @@ const srcList = new Array();
 
   //Discounts
 
-  //identifying Various Types of Discounts
-
   createTopic('discounts', 'modal34', 'Identifying Various Types Of Discounts (Video Needed)',
   '', 'Siddharth Pandey - Founder(FBLA)');
 
@@ -296,6 +294,9 @@ const srcList = new Array();
   createTopic('interest', 'modal46', 'Calculating Simple Interest',
   'Ih17PKUsQiU', 'Siddharth Pandey - Founder(FBLA) <br>');
 
+  createTopic('interest', 'modal46a', 'Simple Interest "Formulas"',
+  'SicaUXce6-A', 'Siddharth Pandey - Founder(FBLA) <br>');
+
   createTopic('interest', 'modal47', 'Introducing Compounding',
   '2qz3hbdbEgk', 'Siddharth Pandey - Founder(FBLA) <br>' +
   'Simple Interest = $731 -- we gain 200% interest on our principle amount every day.' +
@@ -313,6 +314,22 @@ const srcList = new Array();
   'ikV9t99gkN8', 'Siddharth Pandey - Founder(FBLA) <br>' +
   '3:43 - 3:48 Siddharth says "This percent is not the same as this percent over here."' +
   ' His pen cursor is not showing up for some reason. He is comparing the APY percent to the APR percent.');
+
+  //Practice Test
+  createTopic('practiceTest', 'modal51', 'Introduction To Financial Math Practice Test #1 (Part 1)',
+  'jghlJqkMdOQ', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('practiceTest', 'modal52', 'Introduction To Financial Math Practice Test #1 (Part 2)',
+  'a1Xw670Phzc', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('practiceTest', 'modal53', 'Introduction To Financial Math Practice Test #1 (Part 3)',
+  '5sTopCjhHfw', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('practiceTest', 'modal54', 'Introduction To Financial Math Practice Test #1 (Part 4)',
+  'QZ3jvmGIkjI', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('practiceTest', 'modal55', 'Introduction To Financial Math Practice Test #1 (Part 5)',
+  'Qzsy3DKr_P8', 'Siddharth Pandey - Founder(FBLA)');
 
 //Work for tommorow, get the content explained with the HTML, explain what the JS is "saying" in HTML
 
