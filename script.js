@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', (event) => {
   //Navbar Show On Scroll Up, Remove On Scroll Down
   // add padding top to show content behind navbar
+  console.log($('.navbar').outerHeight());
   $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
 
   // detect scroll top or down
