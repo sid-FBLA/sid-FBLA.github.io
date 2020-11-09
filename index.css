@@ -139,6 +139,19 @@ ul {
   .navbar ul li .navbarTextColor {
     color: #000000;
   }
+
+  .navbar .show ul li {
+    /*copied from FBLA*/
+    padding-left: 0.5rem;
+    border-bottom: 1px solid rgb(206, 206, 206);
+  }
+
+  .navbar .show ul li:last-child {
+    /*copied from FBLA*/
+    padding-left: 0.5rem;
+    border-bottom: none;
+  }
+
   /*fontawesome icon*/
   .fa-bars {
     color: #555555;
@@ -154,6 +167,11 @@ ul {
 
   .navbar .container .navbar-collapse ul li:hover > a {
     color: white;
+  }
+
+  .navbar .container .show ul li:hover,
+  .navbar .container .show ul li:active {
+    color: #00529B;
   }
 
   /*Navbar Scroll Classes*/
