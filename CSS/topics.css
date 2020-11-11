@@ -187,8 +187,8 @@ h5 {
   padding: 0px;
 }
 
-.modal-content {
-  max-height: 90%;
+.modal-body {
+  max-height: calc(100vh - 225px);
 }
 
 .modal-title {
