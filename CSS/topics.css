@@ -187,6 +187,10 @@ h5 {
   padding: 0px;
 }
 
+.modal-content {
+  max-height: 90%;
+}
+
 .modal-title {
   font-size: 1.5rem;
 }
