@@ -116,6 +116,11 @@ ul {
 
 @media only screen and (min-width: 360px) {
 
+  /*.container --> .container-lg*/
+  .container {
+    max-width: 100%;
+  }
+
   .navbar {
     border-bottom: 1px solid #00529B;
     padding: 0px;
@@ -153,9 +158,14 @@ ul {
   }
 
   /*fontawesome icon*/
-  .fa-bars {
+  .fa-bars,
+  .fa-times {
     color: #555555;
     font-size: 1.5rem;
+  }
+
+  .fa-times::before {
+    width: 21px;
   }
 
   .navbar .container .navbar-collapse ul li:hover {
@@ -217,12 +227,17 @@ ul {
     font-size: 1.5rem;
   }
 
+  .container .card-deck {
+    display: flex;
+    justify-content: center;
+  }
+
   .container .card-deck:nth-child(1) {
     margin-top: 7rem;
   }
 
   .container .card-deck .card {
-    min-width: 448px;
+    min-width: 472px;
   }
 
   .container .card-deck .card .mt-auto {
@@ -370,6 +385,10 @@ ul {
 
 @media only screen and (min-width: 992px) {
 
+  .container {
+    max-width: 960px;
+  }
+
   .mobile {
     display: none;
   }
@@ -390,6 +409,11 @@ ul {
     background-color: #BE2C37;
   }
 
+}
 
+@media only screen and (min-width: 1200px) {
 
+  .container {
+    max-width: 1140px;
+  }
 }

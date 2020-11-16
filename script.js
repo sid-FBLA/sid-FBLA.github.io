@@ -19,6 +19,22 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
   }
 
+  //NavBar Icon Change
+  const navBarButtonParent = document.querySelector('.navbar .navbar-toggler');
+  const navBarButton = document.querySelector('.navbar .navbar-toggler .fa-bars');
+  console.log(navBarButtonParent);
+  console.log(navBarButton);
+  navBarButton.addEventListener('click', function() {
+    if (!$('.navbar .navbar-collapse').hasClass('show')) {
+      navBarButton.classList.remove('fa-bars');
+      navBarButton.classList.add('fa-times');
+    } else {
+      navBarButton.classList.remove('fa-times');
+      navBarButton.classList.add('fa-bars');
+    }
+  })
+
+
   //Dyanmic footer
 
   const body = document.querySelector('body');
@@ -86,6 +102,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
       //Shows Next Modal, selects via ID
       $('#' + prevModalID).modal('show');
     });
+
+
 
   }
 

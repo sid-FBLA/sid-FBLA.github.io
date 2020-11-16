@@ -1,7 +1,6 @@
 @media only screen and (min-width: 360px) {
 
 body {
-  background-color: #F7F8FA;
 }
 
 
@@ -69,14 +68,23 @@ h5 {
 /*Loader End*/
 
 .container .content {
+  /*
   background-color: #FFFFFF;
   border-radius: 0px 4px 5px 0px;
   padding-bottom: 3rem;
   box-shadow: 0 2px 0 rgba(0,0,0,0.1)
+  */
 }
 
 .container .content .row {
-  padding: 0px 30px 0px 30px;
+}
+
+.container .content .card {
+  /*Styles copied from Khan Academy, card margins
+  overlap so 12px instead of 6px*/
+  padding: 24px 24px 28px 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .container .content .topic-list {
@@ -141,6 +149,7 @@ h5 {
 .video-list .list-group .list-group-item {
   font-weight: 500;
   padding-left: 0px;
+  border: none;
 }
 
 .video-list .list-group .list-group-item .d-inline-flex p {
@@ -165,7 +174,7 @@ h5 {
 }
 
 .video-list .list-group .list-group-item:first-child {
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  /*border-top: 1px solid rgba(0, 0, 0, 0.125);*/
 }
 
 .video-list .list-group .list-group-item p {
