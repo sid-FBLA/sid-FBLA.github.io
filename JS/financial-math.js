@@ -331,6 +331,18 @@ const srcList = new Array();
   createTopic('practiceTest', 'modal55', 'Introduction To Financial Math Practice Test #1 (Part 5)',
   'Qzsy3DKr_P8', 'Siddharth Pandey - Founder(FBLA)');
 
+  createTopic('practiceTest', 'modal56', 'Business Calculations Practice Test #1 (Part 1)',
+  'VtWbNJCo8EE', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('practiceTest', 'modal57', 'Business Calculations Practice Test #1 (Part 2)',
+  'LJhMokvi7ms', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('practiceTest', 'modal58', 'Business Calculations Practice Test #1 (Part 3)',
+  'Hd5A6opVXcI', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('practiceTest', 'modal59', 'Business Calculations Practice Test #1 (Part 4)',
+  'BD9OcyTO-vE', 'Siddharth Pandey - Founder(FBLA)');
+
 
 
 //Work for tommorow, get the content explained with the HTML, explain what the JS is "saying" in HTML
