@@ -305,7 +305,8 @@ const srcList = new Array();
   createTopic('interest', 'modal48', 'Calculating Compound Interest',
   'N6qBBmiMLD0', 'Siddharth Pandey - Founder(FBLA) <br>' +
   '1:30 - Sid writes 1.05/12 = 1.0175, what he means is 1 + 0.05/12 = 1.0175,' +
-  ' this number represents the change in value from month to month.');
+  ' this number represents the change in value from month to month.' +
+  'Note: This video includes a small mistake and description has been changed look on the YT description.');
 
   createTopic('interest', 'modal49', 'Explaining Compound Interest Equation',
   'Llcy5tQG6Ks', 'Siddharth Pandey - Founder(FBLA) <br>');
@@ -317,7 +318,8 @@ const srcList = new Array();
 
   //Practice Test
   createTopic('practiceTest', 'modal51', 'Introduction To Financial Math Practice Test #1 (Part 1)',
-  'jghlJqkMdOQ', 'Siddharth Pandey - Founder(FBLA)');
+  'jghlJqkMdOQ', 'Siddharth Pandey - Founder(FBLA) <br>' +
+  'Feel free to look to our YouTube channel for additional practice test content');
 
   createTopic('practiceTest', 'modal52', 'Introduction To Financial Math Practice Test #1 (Part 2)',
   'a1Xw670Phzc', 'Siddharth Pandey - Founder(FBLA)');
