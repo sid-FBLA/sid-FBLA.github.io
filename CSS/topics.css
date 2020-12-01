@@ -175,7 +175,10 @@ h5 {
 
 .video-list .list-group .list-group-item:first-child {
   /*border-top: 1px solid rgba(0, 0, 0, 0.125);*/
+
 }
+
+
 
 .video-list .list-group .list-group-item p {
   margin-bottom: 0px;
@@ -209,6 +212,9 @@ h5 {
   margin-bottom: 0.5rem;
 }
 
+.list-group .prev-modal:first-child {
+  background-color: red;
+}
 
 
 /*Adjust fontawesome checkmark colour*/

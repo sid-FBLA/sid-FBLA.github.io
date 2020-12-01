@@ -103,6 +103,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
       $('#' + prevModalID).modal('show');
     });
 
+    //limits display of next and previous buttons
+
 
 
   }

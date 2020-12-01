@@ -167,8 +167,15 @@ const srcList = new Array();
   createTopic('consumerCredit', 'modal13', 'Identifying Costs And Benefits Of Various Types Of Credit - Installment And Open Credit',
   'GtPNcwhpPAQ', 'Siddharth Pandey - Founder(FBLA)');
 
-  createTopic('consumerCredit', 'modal14', 'Calculating Sales Tax',
-  'QwSNEVBGZgc', 'Siddharth Pandey - Founder(FBLA)');
+  createTopic('consumerCredit', 'modal14', 'Calculating Sales Tax On Purchase',
+  'afvU_vquh28', 'Shreya Pandey - Member of BME(FBLA)');
+
+  createTopic('consumerCredit', 'modal14a', 'Calculating Sales Tax',
+  'QwSNEVBGZgc', 'Siddharth Pandey - Founder(FBLA) <br>' +
+  '0:18 - Sid says "Our final price is equal to cost*sales tax. "' +
+  'Sid means cost*(1+sales tax) as the sales tax is being added to the initial cost.' +
+  "He often uses 'x' to refer to sales tax. Whenever he says a number*x is the sales tax he means a number*(1+x) is the sales tax." +
+  'This is somewhat cleared up towards the end of the video.');
 
   createTopic('consumerCredit', 'modal15', 'Computing Total Purchase Price With Interest Added',
   'uF4xXDA79FU', 'Siddharth Pandey - Founder(FBLA)');
