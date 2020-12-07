@@ -293,6 +293,12 @@ const srcList = new Array();
   createTopic('percentages', 'modal44', 'Currency Conversion(Taken from "decimals" portion of FBLA requirement)',
   '-3JLwNxjVV8', 'Siddharth Pandey - Founder(FBLA) <br>');
 
+  createTopic('percentages', 'modal44a', 'Calculating The Cost, Markup Or Selling Price (Unknowns)',
+  'XctSEIZNE98', 'Siddharth Pandey - Founder(FBLA) <br>');
+
+  createTopic('percentages', 'modal44b', 'Calculating Amount Of Markdown, The Reduced Price And Percent Of Markdown',
+  'Z6AesvpgGyU', 'Siddharth Pandey - Founder(FBLA) <br>');
+
   //Interest
 
   createTopic('interest', 'modal45', 'Introducing Interest',
