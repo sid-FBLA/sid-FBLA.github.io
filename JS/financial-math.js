@@ -167,8 +167,15 @@ const srcList = new Array();
   createTopic('consumerCredit', 'modal13', 'Identifying Costs And Benefits Of Various Types Of Credit - Installment And Open Credit',
   'GtPNcwhpPAQ', 'Siddharth Pandey - Founder(FBLA)');
 
-  createTopic('consumerCredit', 'modal14', 'Calculating Sales Tax',
-  'QwSNEVBGZgc', 'Siddharth Pandey - Founder(FBLA)');
+  createTopic('consumerCredit', 'modal14', 'Calculating Sales Tax On Purchase',
+  'afvU_vquh28', 'Shreya Pandey - Member of BME(FBLA)');
+
+  createTopic('consumerCredit', 'modal14a', 'Calculating Sales Tax',
+  'QwSNEVBGZgc', 'Siddharth Pandey - Founder(FBLA) <br>' +
+  '0:18 - Sid says "Our final price is equal to cost*sales tax. "' +
+  'Sid means cost*(1+sales tax) as the sales tax is being added to the initial cost.' +
+  "He often uses 'x' to refer to sales tax. Whenever he says a number*x is the sales tax he means a number*(1+x) is the sales tax." +
+  'This is somewhat cleared up towards the end of the video.');
 
   createTopic('consumerCredit', 'modal15', 'Computing Total Purchase Price With Interest Added',
   'uF4xXDA79FU', 'Siddharth Pandey - Founder(FBLA)');
@@ -286,6 +293,12 @@ const srcList = new Array();
   createTopic('percentages', 'modal44', 'Currency Conversion(Taken from "decimals" portion of FBLA requirement)',
   '-3JLwNxjVV8', 'Siddharth Pandey - Founder(FBLA) <br>');
 
+  createTopic('percentages', 'modal44a', 'Calculating The Cost, Markup Or Selling Price (Unknowns)',
+  'XctSEIZNE98', 'Siddharth Pandey - Founder(FBLA) <br>');
+
+  createTopic('percentages', 'modal44b', 'Calculating Amount Of Markdown, The Reduced Price And Percent Of Markdown',
+  'Z6AesvpgGyU', 'Siddharth Pandey - Founder(FBLA) <br>');
+
   //Interest
 
   createTopic('interest', 'modal45', 'Introducing Interest',
@@ -305,7 +318,8 @@ const srcList = new Array();
   createTopic('interest', 'modal48', 'Calculating Compound Interest',
   'N6qBBmiMLD0', 'Siddharth Pandey - Founder(FBLA) <br>' +
   '1:30 - Sid writes 1.05/12 = 1.0175, what he means is 1 + 0.05/12 = 1.0175,' +
-  ' this number represents the change in value from month to month.');
+  ' this number represents the change in value from month to month.' +
+  'Note: This video includes a small mistake and description has been changed look on the YT description.');
 
   createTopic('interest', 'modal49', 'Explaining Compound Interest Equation',
   'Llcy5tQG6Ks', 'Siddharth Pandey - Founder(FBLA) <br>');
@@ -317,7 +331,8 @@ const srcList = new Array();
 
   //Practice Test
   createTopic('practiceTest', 'modal51', 'Introduction To Financial Math Practice Test #1 (Part 1)',
-  'jghlJqkMdOQ', 'Siddharth Pandey - Founder(FBLA)');
+  'jghlJqkMdOQ', 'Siddharth Pandey - Founder(FBLA) <br>' +
+  'Feel free to look to our YouTube channel for additional practice test content');
 
   createTopic('practiceTest', 'modal52', 'Introduction To Financial Math Practice Test #1 (Part 2)',
   'a1Xw670Phzc', 'Siddharth Pandey - Founder(FBLA)');
@@ -330,6 +345,18 @@ const srcList = new Array();
 
   createTopic('practiceTest', 'modal55', 'Introduction To Financial Math Practice Test #1 (Part 5)',
   'Qzsy3DKr_P8', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('practiceTest', 'modal56', 'Business Calculations Practice Test #1 (Part 1)',
+  'VtWbNJCo8EE', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('practiceTest', 'modal57', 'Business Calculations Practice Test #1 (Part 2)',
+  'LJhMokvi7ms', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('practiceTest', 'modal58', 'Business Calculations Practice Test #1 (Part 3)',
+  'Hd5A6opVXcI', 'Siddharth Pandey - Founder(FBLA)');
+
+  createTopic('practiceTest', 'modal59', 'Business Calculations Practice Test #1 (Part 4)',
+  'BD9OcyTO-vE', 'Siddharth Pandey - Founder(FBLA)');
 
 
 
