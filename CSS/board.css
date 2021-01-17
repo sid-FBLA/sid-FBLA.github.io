@@ -1,0 +1,23 @@
+@media only screen and (min-width: 360px) {
+  .container {
+    display: none;
+  }
+  .card .card-body .photo {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .card .card-body .photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  .card .card-body .photo img:hover {
+    cursor: pointer;
+    transition: 50ms;
+    border: solid 3px #00529B;
+  }
+  .container .row .col-sm-12 {
+    margin-bottom: 2rem;
+  }
+}

@@ -81,6 +81,11 @@ ul {
   transform: translate(-50%, -50%);
 }
 
+.new-topic-section {
+  padding-top: 1rem;
+  border-top: 2px solid #E9ECEF;
+  margin-bottom: 2rem;
+}
 
 /* Collapsible */
 
@@ -231,13 +236,13 @@ ul {
     font-size: 1.5rem;
   }
 
+  .awards {
+    margin-bottom: 7rem;
+  }
+
   .container .card-deck {
     display: flex;
     justify-content: center;
-  }
-
-  .container .card-deck:nth-child(1) {
-    margin-top: 7rem;
   }
 
   .container .card-deck .card {

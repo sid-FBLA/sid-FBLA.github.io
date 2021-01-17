@@ -54,9 +54,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
   console.log(wrapper.offsetHeight);
 
   //Enable Tooltips
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  });
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
 
   //Enable Modals
   $('#myModal').on('shown.bs.modal', function () {
