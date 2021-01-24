@@ -1,7 +1,5 @@
 @media only screen and (min-width: 360px) {
-  .container {
-    display: none;
-  }
+  
   .card .card-body .photo {
     margin-left: 1rem;
     margin-top: 1rem;
