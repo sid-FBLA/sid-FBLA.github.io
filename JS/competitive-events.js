@@ -123,8 +123,34 @@ const srcList = new Array();
             };
   };
 
+  //A-G
+  createTopic('A-G', 'modal1', 'How To Win FBLA Introduction To Financial Math',
+  'MY_8HY6Al68', 'Arthur Zhang - FBLA SLC Introduction To Financial Math 3rd Place <br>' +
+  'This video has been made by Arthur Zhang who placed 3rd in the State Leadership Conference for FBLA Introduction To Financial Math');
+
+  //H-N
+  createTopic('H-N', 'modal2', 'How To Win FBLA Introduction To Business Communications',
+  'BppvEJGbOXI', 'Jeffrey Xu - FBLA SLC Introduction To Business Communications Champion(FBLA)',
+  'Jeffrey Xu - FBLA SLC Introduction To Business Communications Champion(FBLA)',
+  'This video has been made by Jeffrey Xu the State Leadership Conference Champion for Introduction To Business Communications');
+
   //O-T
-  createTopic('O-T', 'modal1', 'How To Win FBLA Sales Presentation',
+  createTopic('O-T', 'modal3', 'How To Win FBLA Sales Presentation',
   '_7ZOU8KYmDY', 'Holden Baris - FBLA SLC Sales Presentation Champion(FBLA) <br>' +
-  'This video has been made by Holden Baris the State Leadership Conference Champion for Sales Presentation.');
+  'This video has been made by Holden Baris the State Leadership Conference Champion for Sales Presentation');
+
+  createTopic('O-T', 'modal3a', 'How To Create A Sales Presentation',
+  '6IuFrP5aZBA', 'Holden Baris - FBLA SLC Sales Presentation Champion(FBLA) <br>' +
+  'This video has been made by Holden Baris the State Leadership Conference Champion for Sales Presentation');
+
+  createTopic('O-T', 'modal3b', 'How To Present A Sales Presentation',
+  'LzVMjOrmduA', 'Holden Baris - FBLA SLC Sales Presentation Champion(FBLA) <br>' +
+  'This video has been made by Holden Baris the State Leadership Conference Champion for Sales Presentation');
+
+  createTopic('O-T', 'modal4', 'How To Win FBLA Social Media Campaign',
+  '5JmcPlqX8IE', 'Matthew Zhang - FBLA SLC Social Media Campaign 3rd Place(FBLA) <br>' +
+  'This video has been made by Matthew Zhang who placed 3rd in the State Leadership Conference for FBLA Social Social Media Campaign');
+
+  //U-Z
+
 });
