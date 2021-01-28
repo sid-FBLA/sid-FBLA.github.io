@@ -213,6 +213,10 @@ ul {
 
   /*Scroll Classes End*/
 
+  .display-1 {
+    font-size: 4rem;
+  }
+
   .awards .col .img {
     position: absolute;
     top: 50%
@@ -422,6 +426,10 @@ ul {
 }
 
 @media only screen and (min-width: 992px) {
+
+  .display-1 {
+    font-size: 6rem;
+  }
 
   .container {
     max-width: 960px;
