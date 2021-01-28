@@ -19,6 +19,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
   }
 
+
   //NavBar Icon Change
   const navBarButtonParent = document.querySelector('.navbar .navbar-toggler');
   const navBarButton = document.querySelector('.navbar .navbar-toggler .fa-bars');
