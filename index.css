@@ -212,12 +212,6 @@ ul {
 
   /*Scroll Classes End*/
 
-  .awards .col {
-    text-align: center;
-    position: relative;
-    min-width: 500px;
-  }
-
   .awards .col .img {
     height: 256px;
     width: 256px;
@@ -389,7 +383,12 @@ ul {
 }
 
 @media only screen and (max-width: 576px) {
-  
+  .awards .col {
+    text-align: center;
+    position: relative;
+    min-width: 500px;
+  }
+
 
 }
 
