@@ -1,15 +1,24 @@
 @media only screen and (min-width: 360px) {
 
-  .container .card-deck .card-body {
+  .container {
+    /*Increased margin because of absolute positions numbers*/
+    padding: 0px 30px 0 30px;
+  }
+
+  .container .row .card-body {
     position: relative;
     background-color: white;
   }
 
-  .container .card-deck .card-body:hover {
+  .container .row .card-body:hover {
     cursor: pointer;
   }
 
-  .container .card-deck .card-body .number {
+  .container .row .card-body .number p {
+    margin-bottom: 0px;
+  }
+
+  .container .row .card-body .number {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -23,14 +32,11 @@
     transform: translate(-50%, -50%);
   }
 
-  .container .card-deck .card-body .number p {
-    margin-bottom: 0px;
-  }
-
-
 }
 
 @media only screen and (min-width: 992px) {
+
+
   .social-icon-red-pc {
     display: inline-block;
     width: 70px;
