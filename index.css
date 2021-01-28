@@ -120,12 +120,6 @@ ul {
 }
 
 @media only screen and (min-width: 360px) {
-
-  /*Mobile resizing*/
-  .card-text {
-    margin-right: auto;
-  }
-
   /*.container --> .container-lg*/
   .container {
     max-width: 100%;
@@ -169,6 +163,7 @@ ul {
     padding-left: 0.5rem;
     border-bottom: none;
   }
+
 
   /*fontawesome icon*/
   .fa-bars,
@@ -242,6 +237,10 @@ ul {
 
   .awards {
     margin-bottom: 7rem;
+  }
+
+  .row .col-lg-6 {
+    margin-bottom: 2rem;
   }
 
   .container .card-deck {
@@ -389,6 +388,13 @@ ul {
 
 }
 
+@media only screen and (max-width: 576px) {
+  p {
+    font-size: 3rem;
+  }
+
+}
+
 @media only screen and (min-width: 576px) {
 
   .container .card-deck .card {
@@ -401,6 +407,14 @@ ul {
 
   .container {
     max-width: 960px;
+  }
+
+  .card .card-body .btn {
+    max-width: 130px;
+  }
+
+  .container {
+    max-width: 1140px;
   }
 
   .mobile {
@@ -426,8 +440,4 @@ ul {
 }
 
 @media only screen and (min-width: 1200px) {
-
-  .container {
-    max-width: 1140px;
-  }
 }
