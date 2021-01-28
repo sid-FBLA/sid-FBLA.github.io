@@ -1,4 +1,8 @@
 window.addEventListener('DOMContentLoaded', (event) => {
+
+  //Scrolling Animations
+  AOS.init();
+
   //Navbar Show On Scroll Up, Remove On Scroll Down
   // add padding top to show content behind navbar
   console.log($('.navbar').outerHeight());

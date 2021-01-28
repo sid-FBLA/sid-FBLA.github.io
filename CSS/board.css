@@ -1,4 +1,4 @@
-@media only screen and (min-width: 360px) {
+@media only screen and (min-width: 0px) {
 
   .card .card-body .photo {
     margin-left: 1rem;
@@ -18,4 +18,16 @@
   .container .row .col-sm-12 {
     margin-bottom: 2rem;
   }
+
+  .row .card .card-body .d-inline-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .row .card .card-body .d-inline-flex .photo {
+    order: -1;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
 }

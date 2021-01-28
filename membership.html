@@ -17,6 +17,10 @@
     <link rel="stylesheet" type="text/css" href="index.css"/>
     <link rel="stylesheet" type="text/css" href="CSS/membership.css">
 
+    <!--Animations CDN (AOS)-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script type="text/javascript" src="script.js"></script>
 
     <title>BME FBLA</title>
@@ -69,12 +73,12 @@
       <!--Row-->
       <div class="row">
         <!--First card-->
-        <div class="col-sm-12 col-lg-6">
-          <div class="card text-black">
+        <div data-aos="fade-down" class="col-sm-12 col-lg-6">
+          <div class="card h-100 text-black">
             <div class="card-body d-flex flex-column">
               <div class="number text-blue"><p>1</p></div>
               <h5 class="card-title">Make A Video</h5>
-              <div class="d-inline-flex">
+              <div class="d-flex">
                 <p class="card-text mr-3">
                   Select a type of video to make. This can be
                   selected from our <a href="https://docs.google.com/document/d/18PmBoS5sLtONJ8pfEq2OXancxFi3oW4FPLBnTudo1eE/edit?usp=sharing">
@@ -86,18 +90,22 @@
                   here</a>.
                 </p>
                 <div class="text-align-center">
-                  <a class="social-icon social-icon-blue" href="https://docs.google.com/document/d/1ak2k_Fwbu_eWNXM8oBIsdXm1dC_kQthgnBSNn3BpE_4/edit?usp=sharing" target="_blank">
-                    <i class="fas fa-file-alt"></i>
-                  </a>
-                  <small class="text-muted">Type Selection</small>
+                  <div class="icon-link">
+                    <p>
+                      <a class="social-icon social-icon-blue" href="https://docs.google.com/document/d/1ak2k_Fwbu_eWNXM8oBIsdXm1dC_kQthgnBSNn3BpE_4/edit?usp=sharing" target="_blank">
+                        <i class="fas fa-file-alt"></i>
+                      </a>
+                    </p>
+                    <small class="text-muted">Type Selection</small>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!--Second card-->
-        <div class="col-sm-12 col-lg-6">
-          <div class="card text-black">
+        <div data-aos="fade-down" class="col-sm-12 col-lg-6">
+          <div class="card h-100 text-black">
             <div class="card-body d-flex flex-column">
               <div class="number text-red"><p>2</p></div>
               <h5 class="card-title">Send It</h5>
@@ -107,10 +115,14 @@
                   format your email <a href="https://docs.google.com/document/d/1QZQXzEkx5CxFMSQfoBvKQa-HwjhQS7DcCtHUNqWrYmo/edit?usp=sharing" target="_blank">like this</a>.
                 </p>
                 <div class="text-align-center">
-                  <a class="social-icon social-icon-red" href="mailto:bml.fbla@gmail.com" target="_blank">
-                    <i class="fas fa-envelope"></i>
-                  </a>
-                  <small class="text-muted">Email</small>
+                  <div class="icon-link">
+                    <p>
+                      <a class="social-icon social-icon-red" href="mailto:bml.fbla@gmail.com" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </p>
+                    <small class="text-muted">Email</small>
+                  </div>
                 </div>
               </div>
             </div>
@@ -120,8 +132,8 @@
       <!--Row-->
       <div class="row">
         <!--First card-->
-        <div class="col-sm-12 col-lg-6">
-          <div class="card text-black">
+        <div data-aos="fade-down" class="col-sm-12 col-lg-6">
+          <div class="card h-100 text-black">
             <div class="card-body d-flex flex-column border-0">
               <div class="number text-blue text-red-pc"><p>3</p></div>
               <h5 class="card-title">Content Creation</h5>
@@ -132,18 +144,22 @@
                   be an official member of BME-FBLA!
                 </p>
                 <div class="text-align-center">
-                  <a class="social-icon social-icon-blue social-icon-red-pc" href="https://www.youtube.com/channel/UCbEsjxxfp4SmlZJEAbPD4UQ" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                  </a>
-                  <small class="text-muted">YT Channel</small>
+                  <div class="icon-link">
+                    <p>
+                      <a class="social-icon social-icon-blue social-icon-red-pc" href="https://www.youtube.com/channel/UCbEsjxxfp4SmlZJEAbPD4UQ" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </p>
+                    <small class="text-muted">YT Channel</small>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!--Second card-->
-        <div class="col-sm-12 col-lg-6">
-          <div class="card text-black">
+        <div data-aos="fade-down" class="col-sm-12 col-lg-6">
+          <div class="card h-100 text-black">
             <div class="card-body d-flex flex-column">
               <div class="number text-red text-blue-pc"><p>4</p></div>
               <h5 class="card-title">Congratulations!</h5>
@@ -156,10 +172,14 @@
                   in this NonProfit.
                 </p>
                 <div class="text-align-center">
-                  <a class="social-icon social-icon-red social-icon-blue-pc" href="board.html" target="_blank">
-                    <i class="fas fa-handshake"></i>
-                  </a>
-                  <small class="text-muted">Board Positions</small>
+                  <div class="icon-link">
+                    <p>
+                      <a class="social-icon social-icon-red social-icon-blue-pc" href="board.html" target="_blank">
+                        <i class="fas fa-handshake"></i>
+                      </a>
+                    </p>
+                    <small class="text-muted">Board Positions</small>
+                  </div>
                 </div>
               </div>
             </div>

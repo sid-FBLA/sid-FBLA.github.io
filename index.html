@@ -15,6 +15,12 @@
     <link href="fonts/css/all.css" rel="stylesheet"> <!--load all styles -->
     <link rel="stylesheet" href="index.css"/>
 
+    <!--Animations CDN (AOS)-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
     <script type="text/javascript" src="script.js"></script>
 
     <title>BME FBLA | FBLA Competitive Event Prep</title>
@@ -74,9 +80,9 @@
       </div>
       <!--Awards/Opportunities-->
       <div class="container-fluid">
-        <div class="row awards">
-          <div class="col">
-            <img src="img/wreath.png" alt="wreath over apply">
+        <div data-aos="fade-down" class="row awards">
+          <div class="col animate__animated animate__bounce">
+            <img src="img/wreath.png" alt="wreath over apply" class="animated slideInDown infinite">
             <div class="textOverImage">
               <h4>Membership</h3>
               <p><a href="membership.html">Join</a></p>
@@ -100,7 +106,7 @@
       </div>
       <!-- Cards -->
       <div class="container">
-        <div class="row">
+        <div data-aos="fade-down" class="row">
           <div class="col-lg-6">
             <div class="card h-100 text-black">
               <div class="card-header bg-primary text-white">Event(s): Introduction To Financial Math</div>
