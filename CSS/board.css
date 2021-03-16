@@ -12,8 +12,8 @@
 
   .card .card-body .photo img:hover {
     cursor: pointer;
-    transition: 50ms;
-    border: solid 3px #00529B;
+    transition: 250ms;
+    transform: scale(1.15);
   }
   .container .row .col-sm-12 {
     margin-bottom: 2rem;
