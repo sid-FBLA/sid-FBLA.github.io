@@ -10,6 +10,11 @@
     border-radius: 50%;
   }
 
+  .card .card-body .photo img {
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+
   .card .card-body .photo img:hover {
     cursor: pointer;
     transition: 250ms;
