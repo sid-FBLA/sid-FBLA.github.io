@@ -1,0 +1,24 @@
+.card-title {}
+
+/*Image Overlay*/
+.topic-card .card {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.topic-card .card .card-body .content {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*Junior*/
+.topic-card .overlay-red {
+  z-index: 1;
+  background-color: rgba(190, 44, 55, 0.9);
+}
+
+.topic-card .card .card-body .btn {
+  border-radius: 2px;
+}
