@@ -87,6 +87,10 @@ h5 {
   margin-bottom: 12px;
 }
 
+.container .content .card:hover {
+  cursor: pointer;
+}
+
 .container .content .topic-list {
   margin: 0px 14px 0px 14px;
 }
