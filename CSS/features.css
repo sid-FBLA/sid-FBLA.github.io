@@ -1,5 +1,42 @@
 .card-title {}
 
+/*Priya*/
+.container {
+    max-width: 100%;
+}
+/*Board*/
+.new-topic-section {
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.h5, h5 {
+    font-size: 25px;
+    color: purple;
+}
+.h4, h4 {
+    color: purple;
+}
+/*Top Left card"*/
+.board-card  {
+    margin: 3;
+}
+.board-card .image1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5;
+    width: 180px;
+    height: 178px;
+    background-size: 150px 158px;         				
+}
+.col .card-img-top {
+    border-radius: 30%;
+}
+.board-card .col .card-body .content {
+    text-align: center;
+}
+
 /*Image Overlay*/
 .topic-card .card {
   border: none;
