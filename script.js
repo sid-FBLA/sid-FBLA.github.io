@@ -3,9 +3,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
   //Scrolling Animations
   AOS.init();
 
-  //covering it all
-  $('.wrapper').css('display', 'none');
-  $('footer').css('display', 'none');
 
   //Navbar Show On Scroll Up, Remove On Scroll Down
   // add padding top to show content behind navbar
